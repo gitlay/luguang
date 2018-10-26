@@ -1,0 +1,10 @@
+{template "content","head"}
+{template "content","postion"}
+    <div class="main w1200 fix">
+        {template "content","nav"}
+        <div class="synopsis mian_right rt">
+            <h3>{$CATEGORYS[$catid][catname]}</h3>
+            {$content}
+        </div>
+    </div>
+{template "content","foot"}
