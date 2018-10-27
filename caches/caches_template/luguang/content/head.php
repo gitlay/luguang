@@ -8,6 +8,9 @@
     <script type="text/javascript" src="<?php echo JS_PATH;?>zoom.js"></script>
     <script type="text/javascript" src="<?php echo JS_PATH;?>jquery.SuperSlide.2.1.1.js"></script>
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>style.css">
+
+    <script type="text/javascript" src="<?php echo JS_PATH;?>cookie.js"></script>
+    <script type="text/javascript" src="<?php echo JS_PATH;?>search_common.js"></script>
   <title><?php if(isset($SEO['title']) && !empty($SEO['title'])) { ?><?php echo $SEO['title'];?><?php } ?><?php echo $SEO['site_title'];?></title>
 </head>
 <?php $tmp=explode(',',$CATEGORYS[$catid][arrparentid]);$num=count($tmp);?>
@@ -26,14 +29,28 @@
         </div>
         <div class="logo fix w1200">
             <div class="left fix">
-                <i><img src="<?php echo IMG_PATH;?>logo.png"></i>
+                <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=ff3088f2b01d7f4641badb5ff777000b&action=lists&catid=26&num=1&moreinfo=1+order%3D&page=%24page\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$pagesize = 1;$page = intval($page) ? intval($page) : 1;if($page<=0){$page=1;}$offset = ($page - 1) * $pagesize;$content_total = $content_tag->count(array('catid'=>'26','moreinfo'=>'1 order=','limit'=>$offset.",".$pagesize,'action'=>'lists',));$pages = pages($content_total, $page, $pagesize, $urlrule);$data = $content_tag->lists(array('catid'=>'26','moreinfo'=>'1 order=','limit'=>$offset.",".$pagesize,'action'=>'lists',));}?>
+
+                <i>  <img src="<?php echo $data['1']['top_logo'];?>"></i>
             </div>
             <div class="right">
-                <form class="fix">
-                    <input type="text" name="" class="text" placeholder="请输入搜索内容">
-                    <input type="submit" name="" value="搜索" class="submit">
+                <form class="fix" method="get" id="form" action="<?php echo APP_PATH;?>/index.php?m=search&c=index&a=init&typeid=0&siteid=1&q=">
+                    <input type="text" name="q" class="text" placeholder="请输入搜索内容">
+                    <input type="button" id="search" value="搜索" class="submit">
                     <img src="<?php echo IMG_PATH;?>index3.png">
                 </form>
+                <script>
+                    $('#search').click(function () {
+                        var q = $('[name=q]').val();
+                        if(!q){
+                            alert('请输入关键词');
+                            return
+                        }
+                        var url = $('#form').attr('action');
+                        url = url+q;
+                        window.location.href=url;
+                    })
+                </script>
             </div>
         </div>
         <div class="w1200">

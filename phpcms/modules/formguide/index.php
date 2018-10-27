@@ -51,8 +51,18 @@ class index {
 		if (isset($_POST['dosubmit'])) {
 			$tablename = 'form_'.$r['tablename'];
 			$this->m_db->change_table($tablename);
-			
-			$data = array();
+            //启动session
+            $session_storage = 'session_'.pc_base::load_config('system','session_storage');
+            pc_base::load_sys_class($session_storage);
+            //验证码
+
+
+            if (($_SESSION['code'] != strtolower($_POST['info']['code'])) || empty($_SESSION['code'])) {
+                showmessage("验证码错误");
+            } else {
+                $_SESSION['code'] = '';
+            }
+            $data = array();
 			require CACHE_MODEL_PATH.'formguide_input.class.php';
 			$formguide_input = new formguide_input($formid);
 			$data = new_addslashes($_POST['info']);

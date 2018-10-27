@@ -1,40 +1,40 @@
+{pc:content action="lists" catid="26" num="1" moreinfo=1 order="listorder ASC,inputtime desc" page="$page"}
 <div class="footer fix">
     <div class="w1200">
         <div class="footer_top fix">
             <div class="footer_left">
-                <img src="{IMG_PATH}footer_logo.png">
+                <img src="{$data[1][thumb]}">
             </div>
             <div class="footer_main">
                 <span>友情链接：</span>
+
                 <ul>
-                    <li>鹿光衡器有限公司</li>
-                    <li>衡器有限公司</li>
-                    <li>电子衡器有限公司</li>
-                    <li>鹿光衡器有限公司</li>
-                    <li>衡器有限公司</li>
-                    <li>电子衡器有限公司</li>
-                    <li>鹿光衡器有限公司</li>
-                    <li>衡器有限公司</li>
-                    <li>电子衡器有限公司</li>
+                    {pc:link action="type_list" siteid="$siteid" order="listorder DESC" num="10" return="dat"}
+                    {loop $dat $v}
+                    <li><a href="{$v[url]}" style="display: block;color: #fff;">{$v[name]}</a> </li>
+                    {/loop}
+                    {/pc}
+
                 </ul>
             </div>
             <div class="footer_right">
                 <em>
-                    <img src="{IMG_PATH}footer_gzh.jpg">
+                    <img src="{$data[1][qrcode1]}">
                     <p>微信公众号</p>
                 </em>
                 <em>
-                    <img src="{IMG_PATH}footer_fwh.jpg">
+                    <img src="{$data[1][qrcode2]}">
                     <p>微信服务号</p>
                 </em>
             </div>
         </div>
         <div class="footer_bom">
-            <p>版权所有：石家庄鹿光衡器有限公司    备案号：冀ICP备05077736号   网址：WWW.LUGUANGHENGQI.COM</p>
+            <p style="color:#fff">版权所有：{$data[1][copyright]}    备案号：{$data[1][beian]}   网址：{$data[1][web]}</p>
         </div>
     </div>
 </div>
 <div class="function">
+
     <i class="t"><a href="#anchor" class="topLink"><img src="{IMG_PATH}top.png"></a></i>
     <div class="function_cn fix le">
         <div class="hd fix">
@@ -47,26 +47,26 @@
         <div class="bd fix">
             <ul>
                 <li>
-                    <em><img src="{IMG_PATH}ma.jpg"></em>
+                    <em><img src="{$data[1][left_qrcode]}"></em>
                 </li>
             </ul>
             <ul>
                 <li>
                         <span>
-                            <p>办公室：1754066869</p>
-                            <p>售后：787964631</p>
-                            <p>销售：411448622</p>
+                            <p>办公室：{$data[1][qq1]}</p>
+                            <p>售后：{$data[1][qq2]}</p>
+                            <p>销售：{$data[1][qq3]}</p>
                         </span>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <i>Tel：13656897412</i>
+                    <i>Tel：{$data[1][right_tel]}</i>
                 </li>
             </ul>
         </div>
     </div>
-    <strong><a href=""><img src="{IMG_PATH}liuyan.png"><p>预约咨询</p></a></strong>
+    <strong><a href="{$data[1][yuyue]}"><img src="{IMG_PATH}liuyan.png"><p>预约咨询</p></a></strong>
     <script>
         jQuery(".function_cn").slide({});
     </script>

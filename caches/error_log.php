@@ -33,3 +33,6 @@
 <?php exit;?>10-26 23:03:44 | 2 | extract() expects parameter 1 to be array, null given | phpcms\modules\content\classes\html.class.php | 182
 <?php exit;?>10-26 23:34:54 | 2 | extract() expects parameter 1 to be array, null given | phpcms\modules\content\classes\html.class.php | 182
 <?php exit;?>10-27 00:07:03 | 2 | extract() expects parameter 1 to be array, null given | phpcms\modules\content\classes\html.class.php | 182
+<?php exit;?>10-27 15:29:36 | 2 | Illegal string offset 'interval' | phpcms\modules\formguide\index.php | 94
+<?php exit;?>10-27 15:31:58 | 2 | require(E:\web\luguang\phpcms\modules\formguide\fields\\config.inc.php): failed to open stream: No such file or directory | phpcms\modules\formguide\formguide_field.php | 300
+<?php exit;?>10-27 17:51:11 | 2 | Invalid argument supplied for foreach() | phpcms\modules\search\search_type.php | 94

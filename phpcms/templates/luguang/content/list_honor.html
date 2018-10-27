@@ -1,11 +1,11 @@
 {template "content","head"}
-{template "content","postion"}
+{template "content","position"}
     <div class="main w1200 fix">
         {template "content","nav"}
         <div class="honor mian_right rt">
             <h3>{$CATEGORYS[$catid][catname]}</h3>
             <ul class="honor_ul fix">
-                {pc:content action="lists" catid="$catid" num="6" order="listorder ASC,inputtime desc" page="$page"}
+                {pc:content action="lists" catid="$catid" num="9" order="listorder ASC,inputtime desc" page="$page"}
                  {php $i=1}
                 {loop $data $r}
 
@@ -34,7 +34,9 @@
         })
     </script>
             <div class="link">
+                <ul class="fix">
                 {$pages}
+                </ul>
             </div>
         </div>
     </div>

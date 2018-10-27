@@ -30,6 +30,12 @@ return array (
     'name' => '下载',
     'sort' => '0',
   ),
+  19 => 
+  array (
+    'typeid' => '58',
+    'name' => '营销网络',
+    'sort' => '0',
+  ),
   1 => 
   array (
     'typeid' => '1',

@@ -7,7 +7,7 @@
   'disable' => 0,
   'file_explan' => 
   array (
-    'templates|longchikeji|content' => 
+    'templates|luguang|content' =>
     array (
       'category.html' => '文章频道页',
       'category_download.html' => '下载频道页',
@@ -30,7 +30,7 @@
       'show_picture.html' => '图片内容页',
       'tag.html' => 'tag',
     ),
-    'templates|longchikeji|' => 
+    'templates|luguang|' =>
     array (
       'announce' => '公告',
       'comment' => '评论',
