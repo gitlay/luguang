@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd32ce9a-5e7b-4374-8e8d-2c18a95880da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caches/caches_template/luguang/content/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/caches/caches_template/luguang/content/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caches/error_log.php" beforeDir="false" afterPath="$PROJECT_DIR$/caches/error_log.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pack_20183280_51863.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpcms/modules/admin/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpcms/modules/admin/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpcms/modules/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpcms/modules/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpcms/modules/formguide/templates/formguide_info_list.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpcms/modules/formguide/templates/formguide_info_list.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpcms/templates/luguang/content/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/phpcms/templates/luguang/content/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpcms/templates/luguang/content/show_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/phpcms/templates/luguang/content/show_product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpcms/templates/luguang/content/show_programme.html" beforeDir="false" afterPath="$PROJECT_DIR$/phpcms/templates/luguang/content/show_programme.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpcms/templates/luguang/search/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/phpcms/templates/luguang/search/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpcms/templates/luguang/search/index333.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/robots.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,14 +31,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/phpcms/templates/luguang/content/head.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1736">
-              <caret line="7" column="67" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="67" />
+            <state relative-caret-position="252">
+              <caret line="63" column="57" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
               <folding>
                 <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="foot.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/phpcms/templates/luguang/content/foot.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -130,7 +125,6 @@
         <option value="$PROJECT_DIR$/phpcms/libs/functions/global.func.php" />
         <option value="$PROJECT_DIR$/phpcms/templates/luguang/content/list_marketing.html" />
         <option value="$PROJECT_DIR$/phpcms/templates/luguang/content/index.html" />
-        <option value="$PROJECT_DIR$/phpcms/templates/luguang/content/foot.html" />
         <option value="$PROJECT_DIR$/phpcms/templates/luguang/search/index.html" />
         <option value="$PROJECT_DIR$/phpcms/templates/luguang/config.php" />
         <option value="$PROJECT_DIR$/phpcms/templates/default/search/index.html" />
@@ -148,8 +142,9 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/phpcms/base.php" />
         <option value="$PROJECT_DIR$/phpcms/modules/formguide/templates/formguide_info_list.tpl.php" />
-        <option value="$PROJECT_DIR$/phpcms/templates/luguang/content/head.html" />
         <option value="$PROJECT_DIR$/phpcms/templates/luguang/content/show_product.html" />
+        <option value="$PROJECT_DIR$/phpcms/templates/luguang/content/head.html" />
+        <option value="$PROJECT_DIR$/phpcms/templates/luguang/content/foot.html" />
       </list>
     </option>
   </component>
@@ -287,16 +282,15 @@
       <workItem from="1540645601395" duration="2030000" />
       <workItem from="1540654247478" duration="2937000" />
       <workItem from="1540657385650" duration="8783000" />
-      <workItem from="1540702858385" duration="1400000" />
+      <workItem from="1540702858385" duration="1672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50430000" />
+    <option name="totallyTimeSpent" value="50702000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" />
@@ -305,9 +299,9 @@
       <window_info anchor="bottom" id="File Transfer" order="12" weight="0.3287858" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3287858" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3287858" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3287858" />
       <window_info anchor="right" id="Remote Host" order="4" weight="0.32908848" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22654155" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22654155" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -521,13 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phpcms/templates/luguang/content/foot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-678">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpcms/templates/luguang/search/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -660,11 +647,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/phpcms/templates/luguang/content/head.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1736">
-          <caret line="7" column="67" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="67" />
+        <state relative-caret-position="252">
+          <caret line="63" column="57" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
           <folding>
             <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/templates/luguang/content/foot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
         </state>
       </provider>
     </entry>
