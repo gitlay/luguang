@@ -9,8 +9,7 @@
     <script type="text/javascript" src="<?php echo JS_PATH;?>jquery.SuperSlide.2.1.1.js"></script>
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>style.css">
 
-    <script type="text/javascript" src="<?php echo JS_PATH;?>cookie.js"></script>
-    <script type="text/javascript" src="<?php echo JS_PATH;?>search_common.js"></script>
+
   <title><?php if(isset($SEO['title']) && !empty($SEO['title'])) { ?><?php echo $SEO['title'];?><?php } ?><?php echo $SEO['site_title'];?></title>
 </head>
 <?php $tmp=explode(',',$CATEGORYS[$catid][arrparentid]);$num=count($tmp);?>

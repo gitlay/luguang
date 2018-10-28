@@ -9,8 +9,7 @@
     <script type="text/javascript" src="{JS_PATH}jquery.SuperSlide.2.1.1.js"></script>
     <link rel="stylesheet" href="{CSS_PATH}style.css">
 
-    <script type="text/javascript" src="{JS_PATH}cookie.js"></script>
-    <script type="text/javascript" src="{JS_PATH}search_common.js"></script>
+
   <title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
 </head>
 {php $tmp=explode(',',$CATEGORYS[$catid][arrparentid]);$num=count($tmp);}
@@ -57,12 +56,12 @@
             <div class="nav fix">
                 <div class="w1200">
                     <ul class="navul fix">
-                        <li class="nLi on">
+                        <li class="nLi {if $catid==0} on {/if}">
                             <h3><a href="/">网站首页</a></h3>
                         </li>
                         {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
                         {loop $data $r}
-                        <li class="nLi">
+                        <li class="nLi {if $cat==$r[catid]} on {/if} ">
                             <h3><a href="{$r[url]}">{$r[catname]}</a></h3>
                              <div class="sub">
                                 <div class="w1200 fix">

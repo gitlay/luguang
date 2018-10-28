@@ -695,6 +695,7 @@ class category extends admin {
 		pc_base::load_sys_class('form','',0);
 		if($_GET['type']==1) {
 			$html = array('page_template'=>form::select_template($style, 'content',(isset($cat['setting']['page_template']) && !empty($cat['setting']['page_template']) ? $cat['setting']['page_template'] : 'category'),'name="setting'.$batch_str.'[page_template]"','page'));
+
 		} else {
 			$html = array('category_template'=> form::select_template($style, 'content',(isset($cat['setting']['category_template']) && !empty($cat['setting']['category_template']) ? $cat['setting']['category_template'] : 'category'),'name="setting'.$batch_str.'[category_template]"','category'), 
 				'list_template'=>form::select_template($style, 'content',(isset($cat['setting']['list_template']) && !empty($cat['setting']['list_template']) ? $cat['setting']['list_template'] : 'list'),'name="setting'.$batch_str.'[list_template]"','list'),
@@ -719,6 +720,7 @@ class category extends admin {
 		if (CHARSET == 'gbk') {
 			$html = array_iconv($html, 'gbk', 'utf-8');
 		}
+
 		echo json_encode($html);
 	}
 

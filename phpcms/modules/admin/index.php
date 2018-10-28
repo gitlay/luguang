@@ -11,6 +11,7 @@ class index extends admin {
 	}
 	
 	public function init () {
+
 		$userid = $_SESSION['userid'];
 		$admin_username = param::get_cookie('admin_username');
 		$roles = getcache('role','commons');
@@ -21,10 +22,12 @@ class index extends admin {
 		/*管理员收藏栏*/
 		$adminpanel = $this->panel_db->select(array('userid'=>$userid), "*",20 , 'datetime');
 		$site_model = param::get_cookie('site_model');
+
 		include $this->admin_tpl('index');
 	}
 	
 	public function login() {
+
 		if(isset($_GET['dosubmit'])) {
 			
 			//不为口令卡验证
